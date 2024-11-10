@@ -1,0 +1,340 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background: rgb(226, 226, 226);
+    border: 5px solid grey;
+    border-radius: 10px;
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px 20px;
+    border: 20px solid rgb(218, 206, 206);
+    overflow: hidden;
+}
+
+nav{
+  margin: 20px;
+  position:sticky;
+  gap: 50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  background: #ddd4d4;
+  overflow: hidden;
+  transition: 0.5s;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+nav:hover{
+  width: 450px;
+  border-radius: 20px;
+  transition: 0.5s;
+  
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px  0px;
+  padding-bottom: 3rem;
+}
+
+.logo img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.logo span{
+  font-weight: 600; 
+  padding-left: 25px;
+  font-size: 36px;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  text-shadow: 30px 30px 30px;
+  
+}
+
+
+ul li a{
+    display: flex;
+    margin: 20px 20px;
+    padding: 10px ;
+    align-items: center;
+    gap: 30px;
+    font-size: 36px;
+    color: rgb(58, 64, 77);
+}
+
+.admin-name{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 40px;
+}
+a:hover i{
+  color: #19d5d2;
+  transition: 0.5s;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* MAin Section */
+.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  
+  
+}
+.main-top{
+  display: flex;
+  padding: 10px;
+  width: 100%;
+}
+.main-top i{
+  position: absolute;
+  font-size: 50px;
+  right: 30px;
+  color: rgb(25, 23, 23);
+  cursor: pointer;
+  background: #cebdba;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.main-top i:hover{
+  color: #fff;
+  background: #440707;
+  padding: 20px;
+}
+.users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #f8f5f5;
+  width: 25%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.card h4{
+  text-transform: uppercase;
+  color: #440707;
+}
+.card p{
+  font-size: 18px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.users table{
+  margin:  20px;
+}
+.users .per span{
+  padding: 10px 60px;
+  border-radius: 10px;
+  background: rgb(223, 223, 223);
+}
+.users td{
+  font-size: 24px;
+  padding-right: 10px;
+}
+.card button{
+  width: 30%;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: 0px 0px 5px .5px ;
+}
+ .card button:hover{
+  color: #131313;
+  box-shadow: 0 0 5px cyan,
+  0 0 20px cyan, 0 0 20px cyan;
+  transition: 0.5s;
+}
+
+/*Attendance List serction  */
+.attendance{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.attendance-list{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.table{
+  border-collapse: collapse;
+  margin: 10px 10px;
+  font-size: 24px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+table thead tr{
+  color: #fff;
+  background: #1a9051;
+  text-align: left;
+  font-weight: bold;
+}
+.table th, .table td{
+  padding: 16px 18px;
+}
+.table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(odd){
+  background: #eee6e6;
+}
+.table tbody tr.active{
+  font-weight: bold;
+  color: #4AD489;
+}
+.table tbody tr:last-of-type{
+  border-bottom: 2px solid #4AD489;
+}
+.table button{
+  padding: 6px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 2px 2px 10px .5px;
+
+}
+.table button:hover{
+  background: #4AD489;
+  color: #fff;
+  transition: 0.5s;
+  
+}
+@media (max-width: 992px) { 
+  nav{
+    display: none;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  
+  }
+.users{
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: flex-start;
+  top:10px;
+  width:100%;
+  height: 10vh;
+}
+.card img{
+  width: 70px;
+  height: 50px;
+}
+
+.card h4{
+  font-size: 20px;
+}
+.card p{
+  font-size: 18px;
+}
+.card button{
+  position: absolute;
+  right: 50px;
+  width: 8vh;
+}
+.users .per{
+  position: absolute;
+  left: 220px;
+}
+.users .per span{
+  padding: 5px 30px;
+
+}
+.attendance{
+  position: relative;
+  width: 100%;
+}
+.attendance-list{
+  padding: 5px;
+  margin-top: 0px;
+}
+.table{
+  margin: 0;
+  font-size: 18px;
+  width: 100%;
+  
+}
+
+.table th, .table td{
+  padding: 24px 18px;
+}
+
+
+}

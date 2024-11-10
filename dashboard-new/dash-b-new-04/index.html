@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=overview" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Hover Animated Navbar</title>
+</head>
+<body>
+<div class="main-container">
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="images/f-logo.jpg" alt="" class="">
+            <i class="fa-solid fa-diamond"></i>
+            <img src="images/framer-color-icon.jpg" alt="" class="">   
+        </div>
+        <ul>
+            <li>
+                <a href="#"> Dashboard</a>
+               <a href="#">Payment</a>
+               <a href="#">Transaction</a> 
+               <a href="#">Card</a>
+               <a href="#">Invoice</a>
+               <a href="#">Insights</a>
+               <span></span>
+            </li>
+        </ul>
+        <div class="profile">
+                <i class='bx bx-search' style='color:#ffffff'></i>
+                <i class='bx bx-bell' style='color:#ffffff' ></i>
+                <label>|</label>
+                <i class='bx bx-cog' style='color:#ffffff'></i>
+                <img src="images/user.jpg" alt="">
+            </div>
+        </nav>
+        <div class="container-1">
+            <div class="part-1">
+                <h4>TOTAL BALANCE</h4>
+                <h1>$ 36,254
+                </h1>
+                <p>
+                    <span><i class='bx bx-right-top-arrow-circle'></i></span>
+                    $3245.32 Today, October 17</p>
+                </div>
+                <div class="part-2">
+                    <button class="btn-1">
+                        <i class="fa-regular fa-eye"></i> 
+                        View Analytics
+                    </button>
+                    <button class="btn-2">
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                        Send Money
+                    </button>
+                    <button class="btn-3">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Money
+                    </button>
+                    <label><i class="fa-solid fa-ellipsis"></i></label>
+                </div>
+            </div>
+            <div class="overview">
+                <h2><span class="material-symbols-outlined">overview</span>
+                </span> Overview<span>Last 30 days</span></h2>
+            </div>
+            
+            <div class="card">
+                <div class="card-1">
+                    <div class="account-icon">
+                        <span class="material-symbols-outlined">account_circle</span>
+                    </div>
+                    <h4>BUSINESS ACCOUNT 
+                        <a href="" class=""><i class='bx bxs-right-top-arrow-circle'></i></a>
+                        12.3</h4>
+                          <div class="flip-view-card">
+                              <div class="flip-view-btn">
+                                <div class="flip-front">  
+                                    <h1>$33842.00</h1>
+                                </div>
+
+                                <div class="flip-back">
+                                    <button class="card-1-btn">View Account Details</button>
+                                    <button class="card-1-btn-1">
+                                        <i class="fa-solid fa-chart-line"></i>
+                                        <img src="images/chart-.gif" alt=""></i>  
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="account-icon">
+                            <span class="material-symbols-outlined"> description</span>
+                        </div>
+                        <h4>TAX RESERVE
+                            <a href="" class=""><i class='bx bxs-right-down-arrow-circle' ></i></a>
+                            -21%</h4>
+                              <div class="flip-view-card">
+                                  <div class="flip-view-btn">
+                                    <div class="flip-front">  
+                                        <h1>$700.00</h1>
+                                    </div>
+    
+                                    <div class="flip-back">
+                                        <button class="card-1-btn">View Account Details</button>
+                                        <button class="card-2-btn-1">
+                                            <i class="fa-solid fa-chart-line"></i>
+                                            <img src="images/chart-.gif" alt=""></i>  
+                                        </button>
+                                    </div>
+                                </div>
+                           </div>
+                    </div>
+                    <div class="card-3">
+                        <div class="account-icon">
+                            <span class="material-symbols-outlined"> token</span>
+                        </div>
+                        <h4>BUSINESS SAVINGS</h4>
+                              <div class="flip-view-card">
+                                  <div class="flip-view-btn">
+                                    <div class="flip-front">  
+                                        <h1>$1623.00</h1>
+                                    </div>
+    
+                                    <div class="flip-back">
+                                        <button class="card-1-btn">View Account Details</button>
+                                        <button class="card-1-btn-1">
+                                            <i class="fa-solid fa-chart-line"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                           </div>
+                    </div>
+                </div>
+        </header>
+
+        
+        <div class="container-2">
+        <div class="transaction-record">
+            <div class="title">
+                <h2><i class="fa-solid fa-arrows-to-dot"></i> Recent Transactions
+                    <span>Last 5 activity</span>
+                </h2>
+                <a href="#" class="">See All</a>
+            </div>
+            
+            <div class="transaction-record-card">
+                <i class="fa-solid fa-s" class="stripe-icon"></i> 
+                <div class="info">
+                <h3>Stripe</h3>
+                <h5>Wed, 16Feb, 18:18 </h5>
+                </div>
+                <button>Business</button>
+                <a href="#" class="">+$1444.00</a>
+            </div>
+
+            <div class="transaction-record-card">
+                <i class="fa-brands fa-dropbox"></i>
+                <div class="info">
+                <h3>Dropbox</h3>
+                <h5>Tue, 15Feb, 14:14 </h5>
+                </div>
+                <button>equipment</button>
+                <a href="#" class="">$200.00</a>
+            </div>
+
+            <div class="transaction-record-card">
+                <i class="fa-brands fa-amazon"></i>
+                <div class="info">
+                <h3>Amazon</h3>
+                <h5>Wed, 16Feb, 18:11 </h5>
+                </div>
+                <button>Marketing</button>
+                <a href="#" class="">-$1244.18</a>
+            </div>
+
+            <div class="transaction-record-card">
+                <i class="fa-brands fa-spotify"></i>
+                <div class="info">
+                <h3>Spotify</h3>
+                <h5>MOn, 14Feb, 16:40 </h5>
+                </div>
+                <button>Entertainment</button>
+                <a href="#" class="">-$44.00</a>
+            </div>
+        </div>
+
+        <div class="transaction-history">
+            <div class="title">
+                <h2> <i class="fa-regular fa-snowflake"></i> Cash Flow 
+                <span>Last 5 activity</span>
+                </h2>
+            </div>
+            <div class="money-in-out">
+                <div class="money-in">
+                <i class='bx bxs-down-arrow-circle'></i>
+                <div class="money-in-info">
+                <h3>MONEY IN</h3>
+                <h2>$5083</h2>
+                </div>
+                </div>
+                <div class="money-out">
+                <i class='bx bxs-up-arrow-circle'></i>
+                <div class="money-out-info">
+                <h3>MONEY OUT</h3>
+                <h2>$485.<span>64</span> </h5>
+                </div>
+                </div>
+            </div>
+
+            
+            <div class="money-progressbar">
+                <div class="money-progress-1">
+                <i class='bx bxs-down-arrow'></i>
+                <h3>Stripe <span>%70</span> </h3>
+                </div>
+                <h2>$3514.72</h2>
+                <div class="skill-bar-1">
+                <span class="skill-bar-percentage-1"></span>
+                </div>
+            </div>            
+            
+            <div class="money-progressbar">
+                <div class="money-progress-2">
+                <i class='bx bxs-down-arrow'></i>
+                <h3>Crypto Currency <span>%20</span> </h3>
+               </div>
+               <h2>$1017.49</h2>
+                <div class="skill-bar-2">
+                <span class="skill-bar-percentage-2"></span>
+                </div>  
+            </div>         
+            
+            <div class="money-progressbar">
+                <div class="money-progress-3">
+                <i class='bx bxs-down-arrow'></i>
+                <h3>Win Return <span> %6</span></h3>
+               </div>
+               <h2>$318.60</h2>
+                <div class="skill-bar-3">
+                <span class="skill-bar-percentage-3"></span>
+                </div>
+            </div>             
+        </div>
+    </div>
+       </div>
+            </div>
+                </div>
+                    </div>
+</div>
+</div>
+</body>
+</html>

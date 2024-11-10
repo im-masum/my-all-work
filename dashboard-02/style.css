@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 110vh;
+    padding: 2em;
+    margin: 2em;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    margin: 20px 20px;
+    border: 50px solid rgb(112, 183, 249);
+    box-shadow: 5px 5px 30px 5px;
+    overflow: hidden;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:80%;
+    height: 90vh;
+    padding: 10px;
+    background: #f1f1f1;
+    overflow: hidden;
+
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 90vh;
+    box-shadow: 1px 1px 10px .5px;
+    background: #b9cbd9;
+    overflow: hidden;
+
+    
+}
+.admin-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:99%;
+    height: 10vh;
+    border: 20px solid rgb(208, 232, 246);
+    background: #e6f7fe;
+    box-shadow: 1px 1px 10px .5px;
+    
+}
+.side-menu li {
+    display: flex;
+    padding: 20px 50px;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(28, 27, 27);
+    align-items: center;
+    gap: 20px;
+    transition: all ease .3s;
+    margin-top: 30px;
+    text-shadow: 10px 20px 20px;
+    
+
+}
+.side-menu li i{
+    color: #498dc1;
+    font-size: 50px;
+
+}
+.side-menu li:hover {
+    padding: 20px 80px; 
+    background: rgb(254, 254, 254);
+    color: #131010;
+    box-shadow: 2px 0px 10px .5px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: rgb(225, 238, 253);
+    height: 10vh;
+    box-shadow: 1px 0px 1px .5px ;
+    z-index: 1;
+    box-shadow: 1px 1px 10px .5px;
+
+}
+.nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.nav .search {
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    
+
+}
+.nav .search input[type=text] {
+    border: none;
+    background: #fafafa;
+    padding: 20px;
+    width: 60%;
+    border-radius: 50px;
+}
+.search-btn{
+    width: 130px;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 50px;
+    border: none;
+    background: #fafafa;
+    cursor: pointer;
+    
+}
+.search-btn i{
+    color: #999;
+    text-shadow: 10px 10px 10px;
+}
+
+.nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .user i {
+    font-size: 50px;
+    color: #498dc1;
+    cursor: pointer;
+}
+
+.img-case {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    
+}
+.img-case img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+a {
+    text-decoration: none;
+    font-size: 36px;
+}
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 48px;
+    color: #5f8fa2;
+    padding: 20px;
+    text-shadow: 30px 30px 30px;
+    
+}
+h3 {
+    color: #444141;
+    
+}
+.btn {
+    background: #eee8e8;
+    color: rgb(74, 147, 165);
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+}
+.card:hover, .btn:hover {
+    color: #74aab0;
+    background: rgb(253, 253, 253);
+    padding: 10px 50px;
+    border: 4px solid rgb(0, 234, 255);
+    transition: all ease.3s;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 5px solid #999;
+}
+table {
+    padding: 10px 20px;
+}
+th,td {
+    text-align: left;
+    padding: 10px;
+}
+.content {
+    position: relative;
+    top: 4vh;
+    height: 75vh;
+    background: #f1f1f1;
+    box-shadow: 1px 1px 10px .5px;
+    overflow: hidden;
+
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 400px;
+    height: 250px;
+    gap: 10px;
+    background: white;
+    margin: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+    width: 120px;
+    height: 120px;
+}
+.card .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h3{
+    color: #504d4d;
+    font-style: italic;
+    text-shadow: 10px 20px 20px;
+}
+.content-2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+.recent-payments {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 50vh;
+    flex: 4;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.recent-payments table td:nth-child(4)  .btn {
+    display: block;
+    padding: 10px 5px;
+    text-shadow: 10px 20px 20px;
+    color: #444141;
+
+    
+}
+ .new-students {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    min-height: 50vh;
+    margin: 10 20px;
+    flex: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.new-students table td:nth-child(1) img {
+    height: 60px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.new-students table td:nth-child(3) img {
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*========( Responsive )=======  */
+
+    @media (max-width:767px) {
+
+    .main-container{
+        height: 160vh;
+        border: 10px solid rgb(112, 183, 249);
+        
+    }
+    .container{
+        position: absolute;
+        flex-direction: column;
+        width: 65%;
+        height: 125vh;
+        top: 40vh;
+    } 
+    .side-menu {
+            display:block;
+            width: 100%;
+            height: 30vh;       
+    }
+    
+    .admin-name {
+        width:100%;
+        height: 5vh;
+        border: 5px solid rgb(208, 232, 246);
+    }
+    .side-menu li {
+        display: flex;
+        padding: 0px 30px;
+        font-size: 16px;
+        margin-top: 2cqh;
+    }
+    .side-menu li i{
+        font-size: 24px;
+    
+    }
+    .side-menu li:hover {
+        padding: 10px 50px; 
+        font-size: 24px;
+    }
+    .header {
+        height: 6vh;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .nav .search {
+        gap: 5px;
+    }
+    .nav .search input[type=text] {
+        width: 70%;
+    }
+    .search-btn{
+        width: 80px;
+        padding: 10px;
+        height: 60px;
+        
+    }
+    .search-btn i{
+        color: #999;
+        font-size: 36px;
+        
+    }
+    
+    .nav .user {
+        display: flex;
+        gap: 20px;
+        
+    }
+    .nav .user i {
+        font-size: 36px;
+    }
+    
+    .img-case {
+        width: 100px;
+        height: 80px;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 36px;
+    }
+     h1 {
+        font-size: 24px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    .btn {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .card:hover, .btn:hover {
+        color: #74aab0;
+        background: rgb(253, 253, 253);
+        padding: 5px 20px;
+    }
+    .title {
+        font-size: 12px;
+        padding: 5px;
+    }
+    table {
+        padding: 10px 20px;
+    }
+    th,td {
+        height: 3vh;
+        font-size: 16px;
+        text-align: left;
+        padding: 0px;
+    }
+    .content {
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        top: 0%;
+        height: 120vh;
+        
+    }
+    .cards {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .card {
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        width:100%;
+        height: 100px;
+        gap: 100px;
+        margin: 5px 10px;
+    }
+    .card img{
+        width: 80px;
+        height: 80px;
+    }
+    .card .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-2 {
+        display: flex;
+        position: relative;
+        flex-direction: column;         
+    }
+    .recent-payments {
+        width: 100%;
+        margin: 10px ;
+    }
+    .recent-payments table td:nth-child(4)  .btn {
+        display: flex;
+        padding: 10px 15px;
+    }
+     .new-students {
+        width: 100%;
+        margin: 10px;
+
+    }
+    .new-students table td:nth-child(1) img {
+        width: 50px;
+        height: 50px;
+    }
+    .new-students table td:nth-child(3) img {
+        height: 50px;
+        width: 50px;
+    }
+    
+}

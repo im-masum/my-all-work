@@ -1,0 +1,935 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    align-content: center;
+    padding: 2em;
+    margin: 10px 10px;
+
+}
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgb(37, 34, 34);
+    padding:3em;
+    margin: 20px auto;
+    border-radius: 15px;   
+
+}
+
+.container-1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-content: center;
+    background: rgb(0, 0, 0);
+    margin: 20px auto;
+    padding: 20px auto;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    width: 99%;
+    height: 100px;
+    margin: 20px;
+    padding:20px;
+    transition: all ease.5s;
+
+}
+.nav label{
+    position: relative;
+    align-items: center;
+    left:10px ;
+    font-size: 50px;
+    transition: all ease.5s;
+    color: rgb(227, 230, 234);
+    transition: all ease.5s;
+    cursor: pointer;
+    
+}
+.nav label:hover{
+    color: rgb(209, 89, 89);
+    transition: all ease .5s;
+
+}
+.nav span{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: rgb(54, 49, 49);
+    font-size: 100px;
+    left: 30px;
+    top:-30px;
+}
+.nav-text{
+    display: flex;
+    color: #97a3af;
+    position: absolute;
+    left: 200px ;
+    gap: 100px;
+}
+.nav-text span{
+    position: absolute;
+    align-items: center;
+    color: rgb(54, 49, 49);
+    font-size: 100px;
+    bottom: -25px;
+    left: 810px;
+}
+.part-1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+}
+.image{
+    display: flex;
+    position: absolute;
+    right: 150px;
+}
+.image img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+.image p{
+    display: flex;
+    position: relative;
+    color: #757865;
+    left: 40px;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    
+}
+    
+.card-bx{
+    display: flex;
+    position: relative;
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+
+.card-bx-left{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 10px;
+    margin: px;
+    flex-direction: column;
+}
+
+.card-1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 50px;
+    background: rgb(14, 38, 80);
+    color:rgb(225, 212, 212);
+    
+}
+.card-1 h4{
+    position: absolute;
+    top:50px;
+    font-size: 32px;
+}
+.card-1 h1{
+    position: absolute;
+    bottom: 30px;
+}
+.card-1 p{
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+.card-1 span{
+    position: absolute;
+    top:50px;
+    right: 50px;
+}
+.card-2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    padding: 50px;
+    background: rgb(30, 33, 39);
+    color:rgb(225, 212, 212);   
+}
+.card-2 h4{
+    position: absolute;
+    top:50px;
+    font-size: 32px;
+}
+.card-2 h1{
+    position: absolute;
+    bottom: 30px;
+}
+.card-2 p{
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card-3{
+    display: flex;
+    position: relative;
+    margin: 10px;
+    padding: 50px;
+    width:  100%;
+    height: auto;
+    background: rgb(30, 33, 40);
+    color:rgb(225, 212, 212);
+}
+.card-3 h1{
+    position: absolute;
+    bottom: 100px;
+}
+.card-3 h3{
+    position: absolute;
+    right: 60px;
+    bottom: 100px;
+}
+.card-3 h4{
+    position: absolute;
+    font-size: 32px;
+}
+.card-3 span{
+    position: absolute;
+    right: 50px;
+}
+.card-3-text{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    padding: 10px;
+    border-top: 1px solid grey;
+    bottom:20px;
+
+}
+
+.card-bx-right{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: 10px;
+    padding: 15px;    
+
+}
+
+.card-4{
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background: rgb(30, 33, 40);
+    color:rgb(225, 212, 212);
+    
+}
+.card-4 img{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    right: 40px;
+    bottom: 30px;
+    border-radius: 10px;
+    
+}
+
+.card-4 h1{
+    position: absolute;
+    bottom: 30px;
+}
+.card-4 span{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    right: 100px;
+}
+
+.part-2{
+    display: flex;
+    align-content: center;
+    gap: 1.5em;
+    width: 100%;
+    height: auto;
+    padding:20px;
+ 
+}
+
+.container-2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+}
+.container-3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+    width: 50%;
+    margin: 5px;   
+    height: auto;
+    border-radius: 20px;
+
+}
+
+.card-5{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 50vh;
+    padding: 50px;
+    background: rgb(30,33,40);
+    color: beige;
+    overflow:auto;
+}
+.card-5 p{
+    position: absolute;
+    padding:10px;
+    top: 20px;
+    left:50px;
+    color: #879098;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .card-5 h1{
+    position:absolute;
+    top:300px;
+    left: 50px;
+    font-family: "Arial", Helvetica, sans-serif;
+  }
+.picturs{
+    display: flex;
+    position: absolute;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(84, 79, 79);
+    padding: 40px;
+    margin: 20px;
+    bottom: 0px;
+
+}
+
+.card-5 img{
+    display: flex;
+    position: relative;
+    align-content: center;
+    top:50px;
+    border-radius: 10px;
+    width: 200px;
+    height:200px;
+
+}
+ 
+.card-5 span{
+    position:absolute;
+    right: 50px;
+    border-radius: 50px;
+    top:50px;
+    font-size: 36px;
+    color: #97a3af;
+
+}
+.card-5 h4{
+    position:absolute;
+    top: 320px ;
+    right: 50px;
+    font-size: 32px;
+    font-family: 'Lucida Grande', Geneva, Verdana,;
+    color: #879098;
+
+}
+
+.card-6{
+    display: flex;
+    align-content: center;
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.card-6 image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-7{
+    display: flex;
+    position: relative;
+    padding: 50px;
+    width: 50%;
+    height: 35vh;
+    background-color: rgb(30, 33, 40);
+    color: rgb(148, 160, 163);
+}
+.card-7 h1{
+    position: absolute;
+    bottom: 100px;
+    color: rgb(196, 203, 212) ;
+    
+
+}
+.card-7 p{
+    position: absolute;
+    right: 60px;
+    bottom: 100px;
+    font-weight:bold;
+}
+.skill-bar{
+    position: absolute;
+    bottom: 30px;
+    width: 85%;
+    height: 15px;
+    background: rgb(52, 53, 69);
+    border-radius: 20px;
+    
+}
+.skill-bar-percentage{
+   position: relative;
+   display: block;
+   height: 100%;
+   width: 30%;
+   background-color: rgb(70, 83, 147);}
+
+
+.card-8{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 35vh;
+    padding: 20px;
+    background-color: rgb(30, 33, 40);
+}
+.percentage{
+    position:absolute; 
+    align-items: center;
+    justify-content: center;
+}
+.percentage svg{
+    position: relative; 
+    width: 500px;
+    height:500px;
+
+}
+.percentage svg circle{
+    fill:none;
+    stroke-width: 10;
+    stroke-dasharray: 1270;
+
+}
+.percentage svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #2e353b;
+}
+.percentage svg circle:nth-child(2){
+    stroke-dashoffset: calc(1270 - (1270 * 7.89) / 10);
+    stroke: #345272;
+}
+.number h2{
+    position: absolute;
+    color: beige;
+    top: 180px;
+    left: 180px;
+    
+}
+ .number p{
+    position: absolute;
+    color: antiquewhite;
+    bottom: 200px ;
+    left: 100px;
+ }
+
+
+.card-9{
+    display: flex;
+    overflow: hidden;
+    position: absolute; 
+    padding: 50px;
+    bottom: 0px;
+    width:100%;
+    height: 14vh;
+    color: black;
+    background-color: rgba(173, 184, 218, 0.799);
+    
+}
+.card-9 h3{
+    position: absolute;
+    bottom: 50px;
+    left: 40px;
+    font-size: larger;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.card-9 p{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+.card-9 span{
+    position:absolute;
+    right: 30px;
+    font-size: 48px;
+
+}
+
+@media (max-width: 992px) {
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    
+    .container-1{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: column;
+        background: black;
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        
+    }
+    nav{
+        display: none;
+    }
+    
+.part-1{
+        display: block;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    
+        
+   .card-bx{
+        display: flex;
+        position: relative;
+        width: 100%;
+        gap: 10px;
+        margin: 0px;
+        height: auto;  
+        
+    }
+    .card-bx-left{
+        position: relative;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-1{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 50%;    
+    }
+    .card-1 h4{
+        position: absolute;
+        top:10px;
+        left: 20px;
+        font-size: 16px;
+    }
+    .card-1 h1{
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        font-size: 32px;
+    }
+    .card-1 p{
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+        font-size: 32px;
+        font-weight: 600;
+    
+    }
+    .card-1 span{
+        position: absolute;
+        top:10px;
+        right: 20px;
+    }
+    .card-2{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 50%;
+   
+    }
+    .card-2 h4{
+        position: absolute;
+        top:10px;
+        left: 20px;
+        font-size: 16px;
+    }
+    .card-2 h1{
+        position: absolute;
+        bottom: 0px;
+        left: 20px;
+        font-size: 36px;
+    }
+    .card-2 p{
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .card-3{
+        display: flex;
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+        width:  100%;
+        height: auto;
+    
+    }
+    .card-3 h1{
+        position: absolute;
+        left: 20px;
+        bottom: 50px;
+        font-size: 36px;
+    }
+    .card-3 h3{
+        position: absolute;
+        right: 20px;
+        bottom: 50px;
+    }
+    .card-3 h4{
+        position: absolute;
+        font-size: 16px;
+        left: 20px;
+    }
+    .card-3 span{
+        position: absolute;
+        right: 20px;
+    
+    }
+    .card-3-text{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        padding: 5px;
+        bottom:10px;
+        font-size: 16px;
+        width: 90%;
+    }
+    
+    .card-bx-right{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        margin: 0px;
+        padding: 10px;    
+    
+    }
+    .card-4{
+        display: flex;
+        margin: 5px;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+    }
+    .card-4 img{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        right: 40px;
+        bottom: 20px;
+        border-radius: 10px;
+        
+    }
+    
+    .card-4 h1{
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        font-size: 32px;
+    }
+    .card-4 span{
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        right: 40px;
+    }
+    
+    .part-2{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        
+     
+    }
+    
+    .container-2{
+        display: flex;
+        position: relative;
+        margin: 0px;
+        gap: 10px;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+    
+    }
+    
+    .card-5{
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 50%;
+        height: 35vh;
+        background: rgb(30,33,40);
+        color: beige;
+        
+    }
+    .card-5 p{
+        position: absolute;
+        top:2cm;
+        left:10px;
+        
+    }
+    .card-5 h1{
+        position:absolute;
+        top:200px;
+        left: 20px;
+        font-size: 24px;
+        
+    }
+    
+    .card-5 h4{
+        position:absolute;
+        top: 200px;
+        right: 20px;
+        font-size: 28px;
+    }
+
+    .picturs{
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        padding: 10px auto;
+        left: 5px;
+        right: 5px; 
+        bottom: 10px;
+    }
+     .picturs P{
+        font-size: 14px;
+        padding: 50px;
+     }
+    .card-5 img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card-5 span{
+        position:absolute;
+        right: 20px;
+        top:20px;
+        font-size: 24px;
+    }
+    
+     .card-6{
+        width: 50%;
+        height: 50vh;
+    } 
+    .card-6 img{
+        position: absolute;
+        width: 48%;
+        height: 69%;
+        
+    }
+    
+    .container-3{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top:-250px;
+        margin: 0px;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+    .card-7{
+        display: flex;
+        position: relative;
+        padding: 0px;
+        width: 50%;
+        height: 20vh;
+    }
+    .card-7 h1{
+        position: absolute;
+        bottom: 100px;
+        font-size: 32px;
+        left: 20px;
+   }
+    .card-7 p{
+        position: absolute;
+        right: 20px;
+        bottom: 100px;
+        font-weight:bold;
+    }
+    .card-7 h3{
+        position: absolute;
+        left: 20px;
+        top:10px;
+        font-size: 24px;
+
+    }
+    .skill-bar{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 85%;
+        height: 15px;
+        background: rgb(52, 53, 69);
+        border-radius: 20px;
+        
+    }
+    .skill-bar-percentage{
+       position: relative;
+       display: block;
+       height: 15px;
+       width: 20%;
+       background-color: rgb(70, 83, 147);}
+    .card-8{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        height: 20vh;
+        padding: 0px;
+        background-color: rgb(30, 33, 40);
+    }
+    
+    .percentage svg{
+        position: relative; 
+        top: -50px;
+        left: -50px;
+        width: 200px;
+        height:200px;
+        
+    
+    }
+    .percentage svg circle{
+        fill:none;
+        stroke-width: 5;
+        stroke-dasharray: 1270;
+    }
+    .percentage svg circle:nth-child(1){
+        stroke-dashoffset: 0;
+        stroke: #2e353b;
+        
+    }
+    .percentage svg circle:nth-child(2){
+    stroke-dashoffset: calc(500- (500 * 7.89) / 10);
+    stroke: #345272;
+    }
+    .number h2{
+        position: absolute;
+        color: beige;
+        top: 80px;
+        left: 50px;
+        
+    }
+     .number p{
+        position: absolute;
+        color: antiquewhite;
+        bottom: 15px;
+        left: 20px;
+     }
+    
+    
+    .card-9{
+        display: flex;
+        overflow: hidden;
+        position: absolute; 
+        padding: 20px;
+        bottom: -200px ;
+        width:99%;
+        height: 10vh;
+        color: black;
+        background-color: rgba(173, 184, 218, 0.799);
+    }
+
+    .card-9 h3{
+        position: absolute;
+        bottom: 50px;
+        left: 40px;
+        font-size:small;
+     }
+
+    .card-9 p{
+        position: absolute;
+        bottom: 50px;
+        right: 30px;
+    }
+    
+    .card-9 span{
+        position:absolute;
+        right: 30px;
+        font-size: 24px;
+    
+    }
+
+
+}
+

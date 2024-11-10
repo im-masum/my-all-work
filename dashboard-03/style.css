@@ -1,0 +1,271 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    display: block;
+    height: 100vh;
+    padding: 1em;
+    margin: 1em;
+    background: rgb(219, 219, 219);
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 20px;
+  background: #fff;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+}
+.logo h4{
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 2rem 8rem 2rem 2rem;
+  background: linear-gradient(to right, blue, red,green,rgb(128, 0, 128));
+  background-clip: text;
+  color: transparent;
+}
+.search_box{
+  display: flex;
+  align-items: center;
+}
+.search_box input{
+  padding: 10px;
+  width: 30rem;
+  background: rgb(228, 228, 228);
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  
+  
+}
+.search_box i{
+  padding: 9px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background: #a79f9f;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.header-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-icons i{
+  margin-right: 2rem;
+  cursor: pointer;
+  color:rgb(136, 131, 131);
+}
+.header-icons .account{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  gap: 20px;
+}
+.header-icons .account img{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Side menubar section */
+nav{
+  background: #fff;
+}
+.side_navbar{
+  display: flex;
+  height: 68vh;
+  flex-direction: column;
+  
+}
+.side_navbar span{
+  color: rgb(58, 53, 53);
+  margin: 1rem 2rem;
+  font-size: 24px;
+  background: #f7f4f4;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 10px;
+  border-radius: 5px;
+}
+.side_navbar a{
+  width: 100%;
+  padding: .2rem 2rem;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(125, 121, 121);
+  transition: all ease-in-out 0.5s;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius:30px ;
+}
+.side_navbar i{
+  padding: 10px;
+  font-size: 24px;
+}
+
+
+.links{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.side_navbar a:hover{
+  background: linear-gradient(to right, rgb(6, 14, 254), rgba(6, 6, 211, 0.225));
+  border:  1px solid rgb(129, 6, 245);
+  color: #fff;
+  
+}
+.side_navbar .active{
+  border-left: 2px solid rgb(100, 100, 100);
+}
+
+/* Main Body Section */
+.main_body{
+  width: 70%;
+  padding: .5rem;
+  
+}
+.promo_card{
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 0.5rem 1rem 1rem 3rem;
+  background: rgb(19, 53, 102);
+  
+}
+h1{
+  background: linear-gradient(to right, blue, red,green,purple);
+  background-clip: text;
+  color: transparent;
+}
+
+h2{
+  color: #545659;
+}
+.promo_card span, button{
+  margin: 10px;
+}
+.promo_card button{
+  display: block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+.promo_card button:hover{
+  background: linear-gradient(to right, red, blue);
+  border:  1px solid blueviolet;
+  color: rgb(209, 199, 10);
+}
+
+.history_lists{
+  display: flex;
+  height: 40vh;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+.row a{
+  color:rgb(57, 56, 56);
+}
+table{
+  background: #fff;
+  padding: 1rem;
+  text-align: left;
+  border-radius: 10px;
+}
+table td, th{
+  padding: 0.6rem 1.6rem;
+  
+}
+table th{
+  color: rgb(156, 99, 7);
+  font-size: 16px;
+  border-bottom: 3px solid rgb(173, 27, 27);
+  
+}
+table td{
+  font-size: 14px;
+  color: rgb(13, 12, 12);
+  border-bottom: 1px solid rgb(237, 230, 230);
+
+  
+}
+
+/* Sidebar Section */
+.sidebar{
+  position: relative;
+  left: 65px;
+  width: 15%;
+  padding: 2rem 1rem;
+  background: #fff;
+}
+.sidebar h4{
+  position: relative;
+  width: max-content;
+  bottom: 1rem;
+  text-shadow: 30px 30px 30px;
+  color: #545659;
+
+
+}
+.sidebar h4::after{
+ content: '';
+ background: linear-gradient(to right,rgb(182, 84, 84), blue);
+ border-radius: 100px;
+ height: 4px;
+ width: 100%;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+
+}
+.sidebar .balance{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.balance .icon{
+  color: #fff;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-right: 1rem;
+  padding: 1rem;
+  background: rgb(19, 53, 102);
+}
+.balance .info h5{
+  font-size: 24px;
+}
+.balance .info span{
+  font-size: 18px;
+  color: rgb(62, 45, 45);
+}
+.balance .info i{
+  margin-right: 8px;
+}
